@@ -1,0 +1,20 @@
+{
+  "name": "-asdf",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dbd.js": "2.2.6",
+    "discord-canvas": "^1.4.1",
+    "discord.js": "^12.5.2",
+    "math.js": "^1.1.46"
+  }
+}
