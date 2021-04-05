@@ -63,7 +63,8 @@ ticketC: "",
 closed: "",
 rsystem: "",
 rexp:"",
-exp: ""
+exp: "",
+giveaway: "",
 })
 
 bot.onMessage()
@@ -188,3 +189,27 @@ $onlyForServers[$guildID;]`
 })
  
 bot.onLeave();
+bot.awaitedCommand({
+ name: "awaitReaction1",
+ code: `$editMessage[$message[1];{title:Help} {description:Help Command Pages:
+1️⃣ - Example Page 1
+2️⃣ - Example Page 2} {color:RANDOM}
+]
+`})
+
+bot.awaitedCommand({
+ name: "awaitReaction2",
+ code: `
+ $editMessage[$message[1];{title:Page 1} {description:Hello world! Page 1 Here! Edit Here!} {color:RANDOM} {footer:🔄 - Return to home page}
+]
+ `
+})
+
+bot.awaitedCommand({
+ name: "awaitReaction3",
+ code: `
+ $editMessage[$message[1];{footer:🔄 - Return to home page}
+{title:Page 2} {description:Hello again! New Page! Edit Here!} {color:RANDOM} 
+]
+ `
+})
