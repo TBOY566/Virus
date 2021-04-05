@@ -1,7 +1,7 @@
 const dbd = require("dbd.js")
 
 const bot = new dbd.Bot({ // define the new client
-  token: "",
+  token: "THE TOKEN WAS NEVER HERE !",
   prefix: "="
 
 })
